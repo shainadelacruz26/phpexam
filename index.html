@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="styles.css">
+
+</head>
+<body>
+    <section class="content">
+        <form action="ordersummary.php" method="POST" onsubmit="mySubmit()" class="myForm" >
+            <h1>FORM</h1>
+
+                <div class="container">
+                    <label class="label" for="cname">Customer Name:</label>
+                    <input type="text" name="cname" id="cname" class="input" required>  <br>
+                </div>
+
+                <div class="container">
+                    <label for="gender">Gender</label>
+                    <input type="radio" id="gender" name="male" >
+                    <label for="male">Male</label><br>
+                    <input type="radio" id="gender" name="female">
+                    <label for="female">Female</label><br>
+                </div>
+
+                <div class="container">
+                    <label class="label" for="age">Age:</label>
+                    <input type="number" name="age" id="age" class="input" required  <br>
+                </div>
+
+                <div class="container">
+                    <label class="label" for="address">Address:</label>
+                    <input type="text" name="address" id="address" class="input" required>  <br>
+                </div>
+
+                <div class="container">
+                    <label for="cars">Choose a car:</label>
+
+                    <select name="cinemas" id="cinema">
+                    <option value="Cinema1" id="cinema">Cinema 1</option>
+                    <option value="Cinema2" id="cinema">Cinema 2</option>
+                    <option value="Cinema3" id="cinema">Cinema 3</option>
+                    <option value="Cinema4" selected id="cinema">Cinema 4</option>
+                    <option value="Cinema5" id="cinema">Cinema 5</option>
+                    </select>
+                </div>
+
+                <div class="container">
+                    <label class="label" for="tickets">Number of tickets to purchase:</label>
+                    <input type="number" name="tickets" id="tickets" class="tickets" required  <br>
+                </div>
+
+                <div class="container">
+                    <label for="add ons">Add ons</label><br>
+                    <input type="checkbox" id="addons" name="popcorn" value="Popcorn">
+                    <label for="add ons"> Popcorn</label><br>
+                    <input type="checkbox" id="addons" name="drink" value="drink">
+                    <label for="drink"> Drink</label><br>
+                    <input type="checkbox" id="addons" name="burger" value="burger">
+                    <label for="burger"> burger</label><br><br>
+                </div>
+
+                <div class="button">
+                    <button type="button"  class="btn">Clear</button>
+                    <input type="submit" value="Submit" class="btn">
+                </div>
+        </form>
+
+        <audio controls autoplay>
+            <source src="happy-rock-165132.mp3" type="audio/mp3">
+            Your browser does not support the audio element.
+          </audio>
+    </section>
+</body>
+</html>
